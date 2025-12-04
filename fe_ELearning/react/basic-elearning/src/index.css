@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Inter", sans-serif;
+  
+  --color-primary: #4A90E2;
+  --color-secondary: #F5A623;
+  --color-background-light: #F4F7F9;
+  --color-background-dark: #101922;
+  --color-text-light: #333333;
+  --color-text-dark: #F4F7F9;
+  --color-text-muted-light: #6b7280;
+  --color-text-muted-dark: #9ca3af;
+}
+
+/* --- RESET VITE DEFAULTS (WAJIB) --- */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Ini yang bikin masalah sebelumnya: */
+  max-width: none !important; 
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important; /* Mencegah place-items: center */
+  min-width: 100% !important;
+  min-height: 100vh;
+  width: 100vw !important; /* Paksa lebar layar penuh */
+  overflow-x: hidden; /* Hilangkan scroll samping */
+}
+
+#root {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+
+/* Material Symbols Setup */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
